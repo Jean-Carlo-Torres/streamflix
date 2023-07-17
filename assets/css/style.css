@@ -137,3 +137,83 @@ body {
     color: var(--cinza-secundario);
     font-size: 14px;
 }
+
+/* Estilos para telas menores (celulares) */
+@media (max-width: 768px) {
+    body{
+        text-align: center;
+    }
+    .container {
+        grid-template-columns: 100%;
+    }
+    .secundario {
+        margin: 2em;
+    }
+    .telas__imagem {
+        width: 100%;
+        margin: 0;
+    }
+    .container.secundario {
+        flex-direction: column-reverse;
+    }
+    .container__descricao {
+        order: 2;
+    }
+    .dispositivos__lista {
+        margin: 4em 0;
+        flex-direction: column;
+    }
+    .lista__item {
+        font-size: 32px;
+        margin-bottom: 0.75em
+    }
+}
+
+/* Estilos para telas ainda menores (dispositivos com largura menor que 480px) */
+@media (max-width: 480px) {
+    body{
+        text-align: center;
+    }
+    .container__caixa {
+        margin: 0 1em;
+    }
+    .container.secundario {
+        flex-direction: column-reverse;
+    }
+    .container__descricao {
+        order: 2;
+    }
+    .telas__imagem {
+        width: 100%;
+        margin: 0;
+    }
+    .descricao__titulo {
+        font-size: 28px;
+    }
+    .descricao__texto {
+        font-size: 14px;
+    }
+    .dispositivos__titulo {
+        font-size: 28px;        
+    }
+    .dispositivos__lista {
+        margin: 2em 0;
+        flex-direction: column;
+    }
+    .lista__item {
+        font-size: 24px;
+        margin-bottom: 0.5em
+    }
+    .rodape {
+        margin: 2em;
+    }
+    .rodape__lista {
+        flex-wrap: wrap;
+    }
+    .lista__link a {
+        margin: 0.5em;
+    }
+    .rodape__texto {
+        font-size: 12px;
+    }
+}
